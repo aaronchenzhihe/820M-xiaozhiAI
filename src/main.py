@@ -332,7 +332,7 @@ class Application(object):
 
     def run(self):
         global enable_flag
-        self.charge_manager.enable_charge()
+        self.charge_manager.disable_charge()
         self.audio_manager.open_opus()
         self.volumedown.enable()
         self.volumeup.enable()
@@ -341,7 +341,6 @@ class Application(object):
         enable_flag = 1
         self.start_kws()
         
-        # self.led_power_pin.write(1)
     
 
 

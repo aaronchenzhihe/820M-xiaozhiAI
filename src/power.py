@@ -1,3 +1,0 @@
-from misc import Power
-
-
